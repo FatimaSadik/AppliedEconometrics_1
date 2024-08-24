@@ -16,11 +16,11 @@ correlate(wage educ)
 // descriptive stats
 summarize wage
 sum educ
-sum wage educ 
-// average wage for a certain slice of sample
-sum wage if educ==12 //mean
-sum wage if educ==18  //max
-sum wage if educ==0 //min
+sum wage if educ==12 // average wage for a certain slice of sample
+sum educ
+return list
+sum wage if educ==r(max)  //max
+
 //
 help hist
 hist wage
