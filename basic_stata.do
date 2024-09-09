@@ -6,7 +6,7 @@ help bcuse // access help for bcuse
 bcuse wage1 //load wage1 data
 edit // to view the datasets
 br // to view the dataset in a different mode
-// generate a new variable log(wage)
+
 // for this lab assume your objective is to explore relationship between wage and education without using regression
 // let's visualize the relationship through a scatter plot
 twoway (scatter wage educ)
@@ -26,4 +26,10 @@ help hist
 hist wage
 hist wage, normal
 hist educ,normal
+
+regress wage educ
+
+
+
+
 
